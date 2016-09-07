@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>秒账</title>
+	<style>
+		h2{
+			text-align: center;
+			font: 400 50px/50px 'microsoft yahei';
+			color: #5D86C1;
+		}
+		.wrap-box{
+			position: absolute;
+			width:100%;
+			left:50%;
+			top:50%;
+			-webkit-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+		}
+		.update-img{
+			width:3em;
+			height:3em;
+			vertical-align: middle;
+		}
+		@media (max-width: 992px) {
+			h2{
+				font-size: 30px;
+			}
+		}
+		@media (max-width: 500px) {
+			.update-img{
+				display: block;
+				position: relative;
+				left:50%;
+				transform: translateX(-50%);
+			}
+			h2{
+				font-size: 24px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap-box">
+		<h2>
+			<img class="update-img" src="" alt="">
+			<span>正在努力发版中，请稍候！</span>
+		</h2>
+	</div>
+</body>
+</html>

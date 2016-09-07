@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+    <meta http-equiv = "X-UA-Compatible" content = "IE=9" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>秒账</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- FONT AWESOME ICON -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- STROKE ICON -->
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet">
+    <!-- FONT AWESOME ICON -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- STROKE GAP ICON -->
+    <link href="css/stroke-icon.css" rel="stylesheet">
+    <link href="css/ie7.css" rel="stylesheet">
+    <!-- MENU -->
+    <link rel="stylesheet" href="css/menuzord.css">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- RS5.0 Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+    <!-- RS5.0 Layers and Navigation Styles -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+    <!-- OWL CSS -->
+    <link href="css/owl.theme.default.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <!-- Portfolio Filter -->
+    <link rel="stylesheet" href="css/bootFolio.css">
+    <!-- Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Box slider css -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <!-- JQUERY UI STYLE -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- MAIN STYLE -->
+    <link href="css/main.css" rel="stylesheet">
+
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- RS5.0 Core JS Files -->
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script>
+    //IE outdate friendly warning if you don't want remove it
+    var $buoop = {vs:{i:8,f:3.6,o:10.6,s:3.2,n:9}}
+    $buoop.ol = window.onload;
+    window.onload=function(){
+        try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+        var e = document.createElement("script");
+        e.setAttribute("type", "text/javascript");
+        e.setAttribute("src", "js/update.js");
+        document.body.appendChild(e);
+    }
+</script>
+
+</head>
+<body>
+<!-- =========================
+  START HEADER SECTION
+============================== -->
+<div class="outslider_loading">
+    <div class="la-ball-scale-ripple-multiple la-dark la-2x">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<div class="full-page-search">
+    <form action="#">
+        <input type="text" name="googlesearch" placeholder="输入您要搜索的关键字">
+        <input type="submit" id="searchsubmit" value="Search">
+    </form>
+    <div class="sr-overlay"></div>
+</div>
+<!-- <div class="consult-up">
+    <div class="consult-up-content">
+        <div class="container">
+            <div class="contact-form">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="contact-form-3-text">
+                            <img src="images/google-iframe.png" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="contact-form-left contact-form-3">
+                            <h2>Drop Me A Line</h2>
+
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Phone">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="col-sm-12 text-center">
+                                        <button type="button" class="btn btn-dm">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="remove-consult"><img src="images/log-in-cross.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="consult-overlay"></div>
+</div> -->
+<div class="right-full-menu">
+    <div class="right_menu_item">
+        <div class="right_menu_item-content">
+            <div class="right-menu-icon">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="right-menu-list">
+                <ul>
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li><a href="products.html">秒账是什么？</a></li>
+                    <li><a href="about-1.html">关于我们</a></li>
+                    <li><a href="plans.html">秒账价格</a></li>
+                    <li><a href="blog-single-post-full-width.html">秒账推广</a></li>
+                    <li><a href="extend.html">推广动态</a></li>
+                    <!-- <li><a href="products-manual.html">使用手册</a></li> -->
+                </ul>
+            </div>
+            <div class="right-menu-social-box">
+                <ul class="cms-social cms-social-single">
+                    <li class="facebook">
+                        <a href="javascript:;"><i class="fa fa-wechat"></i></a>
+                        <div class="drop-down">
+                            <a href="javascript:;"><img src="images/weixin-share.png" alt=""></a>
+                            <span class="drop-triangle">
+                                <em></em>    
+                                <b></b>
+                            </span>
+                            <p>关注微信公众号</p>
+                        </div>
+                    </li>
+                    <li class="twitter">
+                        <a href="javascript:;"><i class="fa fa-weibo"></i></a>
+                        <!-- <div class="drop-down">
+                            <a href="javascript:;"><img src="images/weixin-share.png" alt=""></a>
+                            <span class="drop-triangle">
+                                <em></em>    
+                                <b></b>
+                            </span>
+                            <p>关注微博公众号</p>
+                        </div> -->
+                    </li>
+                    <li class="google">
+                        <a href="javascript:;"><i class="fa fa-qq"></i></a>
+                        <!-- <div class="drop-down">
+                            <a href="javascript:;"><img src="images/weixin-share.png" alt=""></a>
+                            <span class="drop-triangle">
+                                <em></em>    
+                                <b></b>
+                            </span>
+                            <p>关注QQ公众号</p>
+                        </div> -->
+                    </li>
+                </ul>
+                <div class="footer-bottom-right right-menu-copyright">
+                    <p>2016 © 秒账. All rights Reserved 版权所有</p>
+                    <p>沪ICP备16028192</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="close_ic"></div>
+</div>
+<header class="header-area navbar-fixed-top">
+    <div class="container custom-header">
+        <div class="row">
+            <div id="menuzord" class="menuzord">
+                <a href="index.html" class="menuzord-brand"><img src="images/logo.png" alt=""></a>
+                <div class="header-search">
+                    <ul>
+                        <!-- <li class="filter-search"><i class="fa fa-search"></i></li> -->
+                        <li class="right_menu"><a href="javascript:;"><i class="fa fa-bars"></i></a></li>
+                        <li class="log-in-search"><a target="_blank" href="http://web.ydcfo.com/">登录秒账</a></li>
+                        <!-- <li class="consult-search"><a href="javascript:;">免费线上体验</a></li> -->
+                        <li class="register-search"><a target="_blank"
+                                                     href="http://web.ydcfo.com/page/reg/register.html">注册秒账</a></li>
+                    </ul>
+                </div>
+                <ul class="menuzord-menu menuzord-menu-bg">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li><a href="products.html">秒账是什么</a></li>
+                    <li><a href="about-1.html">关于我们</a></li>
+                    <li><a href="plans.html">秒账价格</a></li>
+                    <li><a href="blog-single-post-full-width.html">秒账推广</a></li>
+                    <li><a href="extend.html">推广动态</a></li>
+                    <!-- <li><a href="products-manual.html"> </a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- =========================
+  END HEADER SECTION
+============================== -->
+
+
+<!-- START REVOLUTION SLIDER 5.0 -->
+<div class="rev_slider_wrapper">
+    <div id="slider1" class="rev_slider" data-version="5.0">
+        <ul>
+            <li data-index="rs-6" data-transition="parallaxtoright" data-slotamount="default" data-easein="default"
+                data-easeout="default" data-masterspeed="default" data-delay="6510" data-rotate="0"
+                data-saveperformance="off" data-title="3/3" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="images/slide3.png" alt="" width="1920" height="1080" data-bgposition="center center"
+                     data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="2" class="rev-slidebg">
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption Fashion-BigDisplay tp-resizeme rs-parallaxlevel-0"
+
+                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                     data-y="['top','top','top','top']" data-voffset="['325','325','325','325']"
+                     data-width="none"
+                     data-height="none"
+                     data-whitespace="nowrap"
+                     data-transform_idle="o:1;"
+                     data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
+                     data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                     data-start="700"
+                     data-splitin="none"
+                     data-splitout="none"
+                     data-responsive_offset="on"
+
+
+                     style="z-index: 5; white-space: nowrap; font-size: 30px; line-height: 32px; font-weight: 400; color: rgba(34, 34, 34, 1.00); font-family:Lora; visibility: visible;">
+                    <span class="sl-italic"></span>
+                </div>
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption Fashion-BigDisplay tp-resizeme rs-parallaxlevel-0"
+
+                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                     data-y="['top','top','top','top']" data-voffset="['370','370','370','370']"
+                     data-width="none"
+                     data-height="none"
+                     data-whitespace="nowrap"
+                     data-fontsize="['50','40','40','25']"
+                     data-lineheight="['60','42','42','32']"
+                     data-transform_idle="o:1;"
+                     data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
+                     data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                     data-start="1200"
+                     data-splitin="none"
+                     data-splitout="none"
+                     data-responsive_offset="on"
+
+                     style="z-index: 6; white-space: nowrap; font-size: 32px; font-weight: 400; color: rgba(34, 34, 34, 1.00); font-family: sans-serif;">高效协同信息流，实时掌控业务、财务核心数据！
+                </div>
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption Fashion-BigDisplay tp-resizeme rs-parallaxlevel-0"
+
+                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                     data-y="['top','top','top','top']" data-voffset="['460','460','490','490']"
+                     data-width="none"
+                     data-height="none"
+                     data-whitespace="nowrap"
+                     data-transform_idle="o:1;"
+                     data-transform_in="x:-50px;opacity:0;s:500;e:Power2.easeInOut;"
+                     data-transform_out="x:50px;opacity:0;s:500;s:500;"
+                     data-start="1500"
+                     data-splitin="none"
+                     data-splitout="none"
+                     data-responsive_offset="on"
+
+
+                     style="z-index: 7; white-space: nowrap; font-size: 17px; line-height: 28px; font-weight: 400; color: rgba(71, 71, 71, 1.00);font-family:Lora;">
+                    <div class="sl-italic sl-italic-2 text-center">
+                    </div>
+                </div>
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption tp-resizeme rs-parallaxlevel-0"
+
+                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                     data-y="['top','top','top','top']" data-voffset="['535','535','585','585']"
+                     data-width="none"
+                     data-height="none"
+                     data-whitespace="nowrap"
+                     data-transform_idle="o:1;"
+                     data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                     data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                     data-start="2000"
+                     data-splitin="none"
+                     data-splitout="none"
+                     data-responsive_offset="on"
+
+                     style="z-index: 7; white-space: nowrap; font-weight: 400; padding:20px 50px 20px 50px">
+                    <div class="rev-slider-btn rev-slider-btn-2 text-center"><a href="http://web.ydcfo.com/" target="_blank" >马上体验</a></div>
+                </div>
+            </li>
+            <li data-index="rs-14" data-transition="parallaxtoright" data-slotamount="default" data-easein="default"
+                data-easeout="default" data-masterspeed="default" data-delay="6510" data-rotate="0"
+                data-saveperformance="off" data-title="1/3" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="images/slide1.png" alt="" width="1920" height="1080" data-bgposition="center center"
+                     data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="2" class="rev-slidebg">
+                <!-- LAYER NR. 1 -->
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption Fashion-BigDisplay tp-resizeme rs-parallaxlevel-0"
+
+                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                     data-y="['top','top','top','top']" data-voffset="['370','370','370','370']"
+                     data-width="none"
+                     data-height="none"
+                     data-whitespace="nowrap"
+                     data-fontsize="['50','40','40','25']"
+                     data-lineheight="['58','40','40','30']"
+                     data-transform_idle="o:1;"
+                     data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;"
+                     data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                     data-start="1800"
+                     data-splitin="none"
+                     data-splitout="none"
+                     data-responsive_offset="on"
+
+                     style="z-index: 6; white-space: nowrap; font-size: 40px; line-height: 58px; font-weight: 400; color: rgba(34, 34, 34, 1.00); font-family: sans-serif;">
+                    <div class="text-center heading-rp-small">一体化服务管理模式 提供云平台解决方案</div>
+                </div>
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption tp-resizeme rs-parallaxlevel-0"
+
+                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                     data-y="['top','top','top','top']" data-voffset="['460','460','460','460']"
+                     data-width="none"
+                     data-height="none"
+                     data-whitespace="nowrap"
+                     data-transform_idle="o:1;"
+                     data-transform_in="x:-50px;opacity:0;s:500;e:Power2.easeInOut;"
+                     data-transform_out="x:50px;opacity:0;s:500;s:500;"
+                     data-start="2400"
+                     data-splitin="none"
+                     data-splitout="none"
+                     data-responsive_offset="on"
+
+
+                     style="z-index: 7; white-space: nowrap; font-size: 30px; line-height: 28px; font-weight: 400; color: rgba(71, 71, 71, 1.00);font-family:Lora;">
+                    <div class="sl-italic sl-italic-2 text-center">助力中小企业快速进入高速跑道！
+                    </div>
+                </div>
+                <!-- LAYER NR. 4 -->
+                <div class="tp-caption tp-resizeme rs-parallaxlevel-0"
+
+                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                     data-y="['top','top','top','top']" data-voffset="['535','535','585','585']"
+                     data-width="none"
+                     data-height="none"
+                     data-whitespace="nowrap"
+                     data-transform_idle="o:1;"
+                     data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                     data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                     data-start="2800"
+                     data-splitin="none"
+                     data-splitout="none"
+                     data-responsive_offset="on"
+
+                     style="z-index: 7; white-space: nowrap; font-weight: 400; padding:18px 50px;">
+                    <div class="rev-slider-btn .rev-slider-btn-2 text-center text-center-2"><a  href="http://web.ydcfo.com/" target="_blank">马上体验</a></div>
+                </div>
+            </li>
+            <li data-index="rs-7" data-transition="parallaxtoright" data-slotamount="default" data-easein="default"
+                data-easeout="default" data-masterspeed="default" data-delay="6500" data-rotate="0"
+                data-saveperformance="off" data-title="2/3" data-description="">
+                <!-- MAIN IMAGE -->
+                <img src="images/slide2.png" alt="" width="1920" height="1080" data-bgposition="center center"
+                     data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="2" class="rev-slidebg"><!-- LAYER NR. 1 -->
+
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption Fashion-BigDisplay tp-resizeme rs-parallaxlevel-0"
+
+                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                     data-y="['top','top','top','top']" data-voffset="['370','370','370','370']"
+                     data-width="none"
+                     data-height="none"
+                     data-whitespace="nowrap"
+                     data-fontsize="['50','40','40','25']"
+                     data-lineheight="['58','40','40','30']"
+                     data-transform_idle="o:1;"
+                     data-transform_in="y:-30px;rX:70deg;opacity:0;s:2000;e:Power4.easeInOut;"
+                     data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                     data-start="1800"
+                     data-splitin="none"
+                     data-splitout="none"
+                     data-responsive_offset="on"
+
+                     style="z-index: 6; white-space: nowrap; font-size: 30px; line-height: 58px; font-weight: 400; color: rgba(34, 34, 34, 1.00); font-family: sans-serif;">
+                    <div class="text-center heading-rp-small">中小企业面临的致命问题：</div>
+                </div>
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption Fashion-BigDisplay tp-resizeme rs-parallaxlevel-0"
+
+                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                     data-y="['top','top','top','top']" data-voffset="['460','460','460','460']"
+                     data-width="none"
+                     data-height="none"
+                     data-whitespace="nowrap"
+                     data-transform_idle="o:1;"
+                     data-transform_in="x:-50px;opacity:0;s:500;e:Power2.easeInOut;"
+                     data-transform_out="x:50px;opacity:0;s:500;s:500;"
+                     data-start="2400"
+                     data-splitin="none"
+                     data-splitout="none"
+                     data-responsive_offset="on"
+
+
+                     style="z-index: 7; white-space: nowrap; font-size: 40px; line-height: 28px; font-weight: 400; color: rgba(71, 71, 71, 1.00); font-family: sans-serif;">
+                    <div class="sl-italic sl-italic-2 text-center">业务盲点！账目混乱！不能协同工作！客户流失！中小型企业贷款难！
+                    </div>
+                </div>
+                <!-- LAYER NR. 4 -->
+                <!-- <div class="tp-caption tp-resizeme rs-parallaxlevel-0"
+
+                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                     data-y="['top','top','top','top']" data-voffset="['535','535','535','535']"
+                     data-width="none"
+                     data-height="none"
+                     data-whitespace="nowrap"
+                     data-transform_idle="o:1;"
+                     data-transform_in="x:50px;opacity:0;s:500;e:Power2.easeInOut;"
+                     data-transform_out="x:-50px;opacity:0;s:500;s:500;"
+                     data-start="3000"
+                     data-splitin="none"
+                     data-splitout="none"
+                     data-responsive_offset="on"
+
+                     style="z-index: 7; white-space: nowrap; font-weight: 400; padding:20px 50px 20px 50px;">
+                    <div class="rev-slider-btn rev-slider-btn-3 text-center"><a href="http://web.ydcfo.com/" target="_blank">马上体验</a></div>
+                </div> -->
+            </li>    
+        </ul>
+    </div>
+    <!-- END REVOLUTION SLIDER -->
+</div>
+<!-- END OF SLIDER WRAPPER -->
+
+<!-- =========================
+START WELCOME 2 SECTION
+============================== --> 
+<section class="welcome-2 about-me-intro">
+ <!-- MAIN TITLE AREA -->
+ <div class="container">
+    <div class="row">
+       <div class="col-md-4 text-left wow fadeInLeft">
+          <div class="main-title main-title-left">
+             <div class="main-shadow-heading">
+                <h2>秒&nbsp;账</h2>
+             </div>
+             <h2>秒&nbsp;账</h2>
+          </div>
+       </div>
+       <div class="col-md-8">
+          <div class="my-story-head wow fadeInRight">
+             <div class="our-story-2-head">
+                <p>秒账，依托信息化的SAAS云平台，实现企业资源的最优整合，为企业提供信息化、智能化、数字化的商业数据，帮助企业解决高成本、高税负、融资难、信息阻塞、客户流失、内控混乱、资金短缺......一系列企业痛点，发挥企业独特优势，提升核心竞争力，快速实现企业保值增值，帮助企业走出困境，实现生态的可持续发展。</p>
+                <p> 秒账云平台，简单易用，操作便捷，非专业人士也能快速上手，专为中小微型企业量身定制。支持PC端、手机APP和微信多用户协同操作，实时无缝反映信息流数据。充分发挥各种渠道、资源、商机优势，帮助企业结合核心业务，探索最适合的云化解决方案。
+                </p>
+             </div>
+          </div>                   
+       </div>               
+    </div>
+ </div> <!-- END TITLE -->        
+</section>
+<!-- =========================
+END  WELCOME 2 SECTION
+============================== --> 
+
+
+<!-- =========================
+  START DASHBOARD SECTION
+============================== -->
+<section class="dashboard-area grey-bg">
+    <!-- MAIN TITLE AREA -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="main-title main-title-no-divider wow zoomIn">
+                    <div class="main-shadow-heading">
+                        <h2>想你所想</h2>
+                    </div>
+                    <h2>想你所想</h2>
+
+                    <h3>让秒账帮您轻松解决业务&财务问题，为您的企业运营助力</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TITLE -->
+    <!-- <div id="rev_slider_9_2_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
+         style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+        <div id="rev_slider_9_2" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.1">
+            <ul>
+                <li data-index="rs-20" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                    data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
+                    data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
+                    data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                    data-param9="" data-param10="" data-description="">
+                    <img src="images/transparent.png" alt="" title="Home" data-bgposition="center center"
+                         data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-2" data-x="center" data-hoffset=""
+                         data-y="bottom" data-voffset="" data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']" data-transform_idle="o:1;"
+                         data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;" data-start="100" data-responsive_offset="on"
+                         style="z-index: 5;">
+                        <img src="images/slide-feature-01-1.png" alt="" data-ww="1600px"
+                             data-hh="660px" data-no-retina></div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-3"
+                         data-x="center"
+                         data-hoffset=""
+                         data-y=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;"
+                         data-start="500"
+                         data-responsive_offset="on"
+                         style="z-index: 6;">
+                        <img src="images/slide-feature-01-4.png" alt="" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-4"
+                         data-x="center" data-hoffset=""
+                         data-y="bottom" data-voffset=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="x:50px;opacity:0;s:1000;e:Power3.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;"
+                         data-start="250"
+                         data-responsive_offset="on"
+                         style="z-index: 7;">
+                        <img src="images/slide-feature-01-3.png" alt="" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-5"
+                         data-x="center" data-hoffset=""
+                         data-y="bottom" data-voffset=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="x:50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;" data-start="600"
+                         data-responsive_offset="on" style="z-index: 8;">
+                        <img src="images/slide-feature-01-5.png" alt="" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-6"
+                         data-x="center"
+                         data-hoffset=""
+                         data-y="bottom"
+                         data-voffset=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="y:50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;"
+                         data-start="400"
+                         data-responsive_offset="on"
+                         style="z-index: 9;">
+                        <img src="images/slide-feature-01-2.png" alt="" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-7"
+                         data-x="center"
+                         data-hoffset=""
+                         data-y="bottom"
+                         data-voffset=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="y:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;"
+                         data-start="700"
+                         data-responsive_offset="on"
+                         style="z-index: 10;">
+                        <img src="images/slide-feature-01-6.png" alt="" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-8"
+                         data-x="center"
+                         data-hoffset=""
+                         data-y="bottom"
+                         data-voffset=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="y:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;"
+                         data-start="750"
+                         data-responsive_offset="on"
+                         style="z-index: 11;">
+                        <img src="images/slide-feature-01-7.png" alt="" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-9"
+                         data-x="center"
+                         data-hoffset=""
+                         data-y="bottom"
+                         data-voffset=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="y:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;"
+                         data-start="800" data-responsive_offset="on"
+                         style="z-index: 12;">
+                        <img src="images/slide-feature-01-8.png" alt="" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div> -->
+    <div id="rev_slider_9_2_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
+         style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+        <div id="rev_slider_9_2" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.2.1">
+            <ul>
+                <li data-index="rs-20" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                    data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
+                    data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
+                    data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                    data-param9="" data-param10="" data-description="">
+                    <img src="images/transparent.png" alt="" title="Home" data-bgposition="center center"
+                         data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-2" data-x="center" data-hoffset=""
+                         data-y="bottom" data-voffset="" data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']" data-transform_idle="o:1;"
+                         data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;" data-start="100" data-responsive_offset="on"
+                         style="z-index: 5;">
+                        <img src="images/slide-feature-01-1.png" alt="" width="1600" height="660" data-ww="1600px"
+                             data-hh="660px" data-no-retina></div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-3"
+                         data-x="center"
+                         data-hoffset=""
+                         data-y=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;"
+                         data-start="500"
+                         data-responsive_offset="on"
+                         style="z-index: 6;">
+                        <img src="images/slide-feature-01-4.png" alt="" width="1600" height="660" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-4"
+                         data-x="center" data-hoffset=""
+                         data-y="bottom" data-voffset=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="x:50px;opacity:0;s:1000;e:Power3.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;"
+                         data-start="250"
+                         data-responsive_offset="on"
+                         style="z-index: 7;">
+                        <img src="images/slide-feature-01-3.png" alt="" width="1600" height="660" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-5"
+                         data-x="center" data-hoffset=""
+                         data-y="bottom" data-voffset=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="x:50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;" data-start="600"
+                         data-responsive_offset="on" style="z-index: 8;">
+                        <img src="images/slide-feature-01-5.png" alt="" width="1600" height="660" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-6"
+                         data-x="center"
+                         data-hoffset=""
+                         data-y="bottom"
+                         data-voffset=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="y:50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;"
+                         data-start="400"
+                         data-responsive_offset="on"
+                         style="z-index: 9;">
+                        <img src="images/slide-feature-01-2.png" alt="" width="1600" height="660" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-7"
+                         data-x="center"
+                         data-hoffset=""
+                         data-y="bottom"
+                         data-voffset=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="y:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;"
+                         data-start="700"
+                         data-responsive_offset="on"
+                         style="z-index: 10;">
+                        <img src="images/slide-feature-01-6.png" alt="" width="1600" height="660" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-8"
+                         data-x="center"
+                         data-hoffset=""
+                         data-y="bottom"
+                         data-voffset=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="y:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;"
+                         data-start="750"
+                         data-responsive_offset="on"
+                         style="z-index: 11;">
+                        <img src="images/slide-feature-01-7.png" alt="" width="1600" height="660" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-9"
+                         data-x="center"
+                         data-hoffset=""
+                         data-y="bottom"
+                         data-voffset=""
+                         data-width="['none','none','none','none']"
+                         data-height="['none','none','none','none']"
+                         data-transform_idle="o:1;"
+                         data-transform_in="y:-50px;opacity:0;s:1000;e:Power2.easeInOut;"
+                         data-transform_out="opacity:0;s:300;s:300;"
+                         data-start="800" data-responsive_offset="on"
+                         style="z-index: 12;">
+                        <img src="images/slide-feature-01-8.png" alt="" width="1600" height="660" data-ww="1600px"
+                             data-hh="660px" data-no-retina>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- =========================
+  END DASHBOARD SECTION
+============================== -->
+
+<!-- =========================
+      START CLIENT 2 SECTION
+      ============================== -->
+<!-- <section class="client-2-area">
+    MAIN TITLE AREA
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="main-title wow zoomIn">
+                    <div class="main-shadow-heading">
+                        <h2>大家的认可</h2>
+                    </div>
+                    <h2>大家的认可</h2>
+                    <h3>业界的肯定，是我们不断挑战新高度的动力</h3>
+                </div>
+            </div>
+        </div>
+    </div> END TITLE
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="client-bg-2-slider" class="owl-carousel all-carousel owl-theme">
+                    <div class="client-2-slider">
+                        <div class="client-2-slider-content">
+                            <span><i class="fa fa-quote-left"></i></span>
+                            <h3>In my job as social media strategist, I've tried every analytics product on the market and when I came across Metrics, I was blown away! </h3>
+                            <img src="images/client/client-user-1.png" alt="">
+                        </div>
+                        <h2>Mahmoud Baghagho</h2>
+                        <h3>Art Director</h3>
+                    </div>
+                    <div class="client-2-slider">
+                        <div class="client-2-slider-content">
+                            <span><i class="fa fa-quote-left"></i></span>
+                            <h3>The ability to generate reports that tell more about a website than a prospect knows is the key to building business using Metrics.</h3>
+                            <img src="images/client/client-user-2.png" alt="">
+                        </div>
+                        <h2>Fouad Badawy</h2>
+                        <h3>CEO</h3>
+                    </div>
+                    <div class="client-2-slider">
+                        <div class="client-2-slider-content">
+                            <span><i class="fa fa-quote-left"></i></span>
+                            <h3>Metrics is one of the most impressive social media software efforts I've ever seen. From the intuitive interface to the powerful tools.</h3>
+                            <img src="images/client/client-user-3.png" alt="">
+                        </div>
+                        <h2>Mostafa Mabrouk</h2>
+                        <h3>Web Developer</h3>
+                    </div>
+                    <div class="client-2-slider">
+                        <div class="client-2-slider-content">
+                            <span><i class="fa fa-quote-left"></i></span>
+                            <h3>In my job as social media strategist, I've tried every analytics product on the market and when I came across Metrics, I was blown away! </h3>
+                            <img src="images/client/client-user-1.png" alt="">
+                        </div>
+                        <h2>Mahmoud Baghagho</h2>
+                        <h3>Art Director</h3>
+                    </div>
+                    <div class="client-2-slider">
+                        <div class="client-2-slider-content">
+                            <span><i class="fa fa-quote-left"></i></span>
+                            <h3>The ability to generate reports that tell more about a website than a prospect knows is the key to building business using Metrics.</h3>
+                            <img src="images/client/client-user-2.png" alt="">
+                        </div>
+                        <h2>Fouad Badawy</h2>
+                        <h3>CEO</h3>
+                    </div>
+                    <div class="client-2-slider">
+                        <div class="client-2-slider-content">
+                            <span><i class="fa fa-quote-left"></i></span>
+                            <h3>Metrics is one of the most impressive social media software efforts I've ever seen. From the intuitive interface to the powerful tools.</h3>
+                            <img src="images/client/client-user-3.png" alt="">
+                        </div>
+                        <h2>Mostafa Mabrouk</h2>
+                        <h3>Web Developer</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ -->
+<!-- =========================
+END CLIENT 2 SECTION
+============================== -->
+
+<!-- =========================
+  START FOOTER SECTION
+============================== -->
+<section class="footer-area">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="join-team footer-subscribe clearfix row">
+                        <div class="col-md-6 col-xs-12 p-t-l-50">
+                            <div class="footer-first-content">
+                                <ul>
+                                    <li><a href="javascript:;"><i class="fa fa-home"></i>上海益萃网络科技有限公司</a></li>
+                                    <li><a href="javascript:;"><i class="fa fa-envelope"></i>support@ydcfo.com</a></li>
+                                    <li><a href="javascript:;"><i class="fa fa-map-marker"></i>上海市静安区彭江路602号易园E座338</a></li>
+                                    <li><a href="javascript:;"><i class="fa fa-phone"></i>400-7788-966</a></li>
+                                </ul>
+                                <a class="join-team-a" href="javascript:;"><img src="images/footer-logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-t-50">
+                            <div class="all-link pricinig-head-btn footer-top-btn">
+                                <div class="footer-btn-in">
+                                     <a href="http://www.ydcfo.com/CloudAccountant.apk" ><i class="fa fa-android"></i>安卓下载
+                                        <div class="footer-drop">
+                                            <img src="images/android-small.png" alt="">
+                                            <span class="drop-triangle">
+                                                <em></em>    
+                                                <b></b>
+                                            </span>
+                                            <p>扫一扫</p>
+                                            <p>下载安卓客户端</p>
+                                         </div>
+                                     </a>
+                                     <a href="https://itunes.apple.com/cn/app/miao-zhang/id1143765602?mt=8" target="_blank">
+                                         <i class="fa fa-apple"></i>iOS下载
+                                         <div class="footer-drop">
+                                            <img src="images/iphone-small.png" alt="">
+                                            <span class="drop-triangle">
+                                                <em></em>    
+                                                <b></b>
+                                            </span>
+                                            <p>扫一扫</p>
+                                            <p>下载苹果客户端</p>
+                                         </div>
+                                     </a>
+                                  </div>
+                            </div>
+                            <div class="footer-bottom-right">
+                                <p>2016 © 秒账. All rights Reserved 版权所有</p>
+                                <p>沪ICP备16028192</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =========================
+  END FOOTER SECTION
+============================== -->
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--bootstrap的js-->
+<script src="js/bootstrap.min.js"></script>
+<!--菜单的js-->
+<script src="js/menuzord.js"></script>
+<!--owl.轮播的js-->
+<script src="js/owl.carousel.min.js"></script>
+<!--计数器时间控制类库-->
+<script src="js/jquery.counterup.js"></script>
+<!--滚动监听内裤-->
+<script src="js/waypoints.min.js"></script>
+<!--倒计时内裤 可用于快速计算两个日期间的时间差值，并能够以多种格式将结果动态显示出来，如：毫秒、秒、分、小时、天、周、年、世纪等。
+同时它也内置了格式化输出的方法，能将结果以这样的形式展示："11 years, 3 months, 23 days, 5 hours, and 47 minutes"-->
+<script src="js/countdown.js"></script>
+
+<script src="js/jquery.bootFolio.js"></script>
+<!--Magnific Popup – 免费的响应式 jQuery Lightbox 插件 Magnific Popup 是一个响应式弹出层和对话框组件，专注于性能，为用户在各种平台下提供良好的体验。-->
+<script src="js/jquery.magnific-popup.js"></script>
+<!--jquery&-UI-->
+<script src="js/jquery-ui.js"></script>
+<!--轮播-->
+<script src="js/rev-function.js"></script>
+<!--动画控制-->
+<script src="js/jquery.bxslider.js"></script>
+<!--平滑滚动的jquery插件-->
+<script src="js/smoothscroll.js"></script>
+<!--WOW.js – 让页面滚动更有趣-->
+<script src="js/wow.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
